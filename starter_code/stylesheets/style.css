@@ -8,3 +8,560 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+
+    nav {
+        background-color: rgb(84, 11, 81);
+        display: flex;
+    }
+
+    header {
+        background-color: rgb(84, 11, 81);
+        color: white;
+        display: flex;
+    }
+
+    header button {
+        text-align: center;
+        border: 2px solid rgb(84, 11, 81);
+        border-radius: 5%;
+        text-transform: uppercase;
+    }
+
+    header div button:first-of-type {
+        color: rgb(84, 11, 81);
+    }
+
+    .companies {
+        background-color: rgb(243, 234, 226);
+    }
+
+    .companies div {
+        display: flex;
+    }
+
+    .team {
+        background-color: rgb(243, 234, 226);
+        display: flex;
+    }
+
+    .choose {
+        display: flex;
+        background-color: rgb(243, 234, 226);
+    }
+
+    .speed {
+        background-color: rgb(243, 234, 226);
+        display: flex;
+    }
+
+    .scale {
+        display: flex;
+    }
+
+    .scale button {
+        text-align: center;
+    }
+
+    .scale button:first-of-type {
+        background-color: rgb(84, 11, 81);
+        color: white;
+    }
+
+    .scale button:last-of-type {
+        border: 2px solid rgb(84, 11, 81);
+        color: rgb(84, 11, 81);
+        background-color: white;
+    }
+
+    .scale ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .scale ul p:first-child {
+        color: rgb(84, 11, 81);
+        font-weight: bold;
+    }
+
+    .welcome {
+        background-color: rgb(84, 11, 81);
+        color: white;
+        display: flex;
+    }
+
+    .welcome  button {
+        text-align: center;
+    }
+
+    .welcome button:first-of-type {
+        background-color: rgb(84, 11, 81);
+        color: white;
+        border: 2px solid white;
+    }
+
+    .welcome button:last-of-type {
+        background-color: white;
+        color: rgb(84, 11, 81);
+    }
+
+    footer div:first-of-type {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    footer div > ul {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    footer ul {
+        list-style: none;
+    }
+
+
+
+@media (max-width: 768px) {
+
+    html img{
+        max-width: 768px;
+        margin: 0;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    nav div > img{
+        width: 100px;
+        height: 30px;
+    }
+
+    nav button {
+        background-color: rgb(84, 11, 81);
+        float: right;
+    }
+
+    nav ul {
+        display: none
+    }
+
+    header {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 4em;
+        font-style: bold;
+    }
+
+    header p {
+        font-size: 1.3em;
+    }
+
+    header button {
+        width: 90%;
+        height: 50px;
+        margin: 5px 0;
+        position: relative;
+        border-radius: 5%;
+    }
+
+    header button > img{
+        height: 30px;
+        width: 30px;
+        padding: 4px;
+        float: left;
+        background-color: white;
+        position: absolute;
+        object-fit: cover;
+        left: 3px;
+        top: 3px;
+    }
+
+    header img:last-of-type {
+        max-width: 768px;
+    }
+
+    header button > span {
+        font-size: 1.5em;
+        margin: atuo;
+    }
+
+    header button:last-of-type {
+        background-color: rgb(100, 100, 245);
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .companies p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .companies div {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
+    }
+
+    .companies div > img{ 
+        height: 50px;
+        margin: 5px;
+    }
+
+    .team {
+        font-size: 20px;
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .team div:last-of-type {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .team div h2 {
+        font-size: 2em;
+    }
+
+    .choose {
+        flex-direction: column-reverse;
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+
+    .choose div:first-of-type {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .choose div h2 {
+        font-size: 2em;
+    }
+
+    .speed {
+        flex-direction: column;
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+
+    .speed div h2 {
+        font-size: 2em;
+    }
+
+    .scale {
+        font-size: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .speed div:last-of-type {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .scale  button {
+        width: 90%;
+        height: 50px;
+        margin: 5px 0;
+        position: relative;
+        font-size: 1em;
+    }
+
+    .scale span {
+        color: rgb(84, 11, 81);
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    .scale li p:last-of-type {
+        font-weight: bold;
+    }
+
+    .welcome {
+        font-size: 20px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .welcome h3 {
+        font-size: 2em;
+    }
+
+    .welcome  button {
+        width: 90%;
+        height: 50px;
+        margin: 5px 0;
+        font-size: 1em;
+    }
+
+    footer img {
+        padding-left: 5%;
+        padding-top: 40px;
+        height: 50px;
+        width: 50px;
+    }
+
+    footer ul li {
+        padding: 5px 0;
+    }
+
+    footer div ul li:first-child {
+        font-weight: bold;
+    }
+
+    footer hr {
+        width: 90%;
+    }
+
+    footer > ul {
+        font-weight: bold;
+    }
+    
+    footer > ul:last-of-type {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer div:last-of-type {
+        width: 90%;
+        text-align: left;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    html img{
+        max-width: 1024px;
+        margin: 0;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    nav div > img{
+        width: 100px;
+        height: 30px;
+    }
+
+    nav button {
+        background-color: rgb(84, 11, 81);
+        float: right;
+        border-style: none;
+    }
+
+    nav ul {
+        display: none
+    }
+
+    header {
+        text-align: left;
+        flex-direction: column;
+        padding-left: 5%;
+        height: 750px;
+        background-image: url(../images/background-singup.png);
+        max-width: 1024px;
+        background-repeat: no-repeat;
+        background-size: 1400px;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    header h1 {
+        font-size: 4.5em;
+        font-style: bold;
+        width: 50%;
+    }
+
+    header p {
+        font-size: 1.8em;
+        width: 50%;
+    }
+
+    header button {
+        width: 50%;
+        height: 50px;
+        margin: 5px 0;
+        position: relative;
+        border-radius: 5%;
+        font-size: .8em;
+    }
+
+    header button > img{
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        float: left;
+        background-color: white;
+        position: absolute;
+        object-fit: cover;
+        left: 2px;
+        top: 2px;
+    }
+
+    header div > img {
+        float: right;
+        width: 550px;
+        position: absolute;
+        top: 300px;
+        left: 68%;
+    }
+
+    header button > span {
+        font-size: 1.5em;
+        margin: atuo;
+    }
+
+    header button:last-of-type {
+        background-color: rgb(100, 100, 245);
+        color: white;
+    }
+
+    .companies {
+        text-align: center;
+        background-color: rgb(243, 234, 226);
+        height: 200px;
+    }
+
+    .companies p {
+        padding-top: 30px;
+        font-size: 1.8em;
+    }
+
+    .companies div {
+        height: 40px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px 0;
+    }
+
+    .team {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .team img{
+        content: url(../images/connectedness.png);
+        width: 80%;
+    }
+
+    .team h2 {
+        font-size: 2.2em;
+        padding-left: 20%;
+    }
+
+    .team p, a {
+        font-size: 1.4em;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-decoration: none;
+    }
+
+    .choose {
+        flex-direction: column-reverse;
+        padding-bottom: 40px;
+    }
+
+    .choose img {
+        content: url(../images/flexibility.png);
+        width: 80%;
+        float: right;
+    }
+
+    .choose h2 {
+        font-size: 2.2em;
+        padding-left: 20%;
+    }
+
+    .choose p, a {
+        font-size: 1.4em;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-decoration: none;
+    }
+
+    .speed {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .speed img {
+        content: url(../images/speed.png);
+        width: 80%;
+    }
+
+    .speed h2 {
+        font-size: 2.2em;
+        padding-left: 20%;
+    }
+
+    .speed p, a {
+        font-size: 1.4em;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-decoration: none;
+    }
+
+    .scale {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scale h2 {
+        font-size: 2.2em;
+        padding-left: 20%;
+    }
+
+    .scale p {
+        font-size: 1.4em;
+    }
+
+    .scale ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .scale ul li {
+        width: 20%;
+        padding-top: 0px;
+    }
+
+    .scale ul p {
+        font-size: 1em;
+    }
+
+    .scale ul p:first-child {
+        font-size: 3em;
+        padding-bottom: 5px;
+    }
+
+    .welcome {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome button {
+        width: 80%;
+    }
+
+}
